@@ -1,37 +1,12 @@
-manually build site with help of websim
+get top 100 apps
 
 
-
-this may not perfect but is a start
-
-
-## feature 
+get screenshot of each one 
 
 
-1. auto generate sitemap based on lang subfolder,including .html files
-2. auto check seo requirements avoid google redirection and not index issue
-3. auto submit url to google index use indexnow
-4.pc mobile responsive
-5. seo metadata
-6. google analytic and microsoft clarity
-7. pwa support
-8. keyword research
-   umbrella  trend  kgr spyfu
-10.  user  https://github.com/wanghaisheng/workers-users-cloudflare/tree/main
-
-11.  dev
-    
-https://idx.google.com/applimode-7011803
-
-12. image generation
-
-logo, cover,
-
-14.  blog  text generation  g4f
-
-https://github.com/wanghaisheng/auto-blog-g4f-action
+get color palette
 
 
-15  静态框架自动部署
+generate md for each app
 
-https://github.com/marketplace/actions/github-pages-action
+publish site
