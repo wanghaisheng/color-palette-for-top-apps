@@ -3,7 +3,7 @@ import AppCard from './components/AppCard';
 import MarkdownDisplay from './components/MarkdownDisplay';
 import api from './services/api';
 import { AppData } from './types';
-
+import "./app.css"
 function App() {
     const [markdownContent, setMarkdownContent] = useState<string | null>(null);
     const [appData, setAppData] = useState<AppData | null>(null);
@@ -86,16 +86,22 @@ function App() {
 
 
   return (
-    <div className="app">
-      {allApps && (
-        <div>
-           {appData && <AppCard app={appData} />}
-          <button onClick={handlePreviousApp} disabled={currentAppIndex===0}>Previous</button>
-          <button onClick={handleNextApp} disabled={currentAppIndex === allApps.length -1}>Next</button>
-        </div>
-      )}
+    <div className="app-container">
+      <div className="app-navigation">
+        {allApps && (
+          <div>
+             {appData && <AppCard app={appData} />}
+            <div className='app-navigation-buttons'>
+              <button onClick={handlePreviousApp} disabled={currentAppIndex===0}>Previous</button>
+              <button onClick={handleNextApp} disabled={currentAppIndex === allApps.length -1}>Next</button>
+            </div>
 
-         <MarkdownDisplay markdown={markdownContent} />
+          </div>
+        )}
+        </div>
+          <div className='markdown-container'>
+           <MarkdownDisplay markdown={markdownContent} />
+          </div>
     </div>
   );
 }
