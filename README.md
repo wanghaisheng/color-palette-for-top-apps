@@ -1,6 +1,10 @@
 # Learn UI color palette from master: how top 100 apps color palette works
 
 
+https://www.paywallscreens.com/
+
+
+
 **Core Functionality and Steps:**
 
 1.  **App Data Acquisition:**
